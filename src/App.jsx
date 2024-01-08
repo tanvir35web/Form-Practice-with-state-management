@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import TextFocus from "./TextFocus";
 
 export default function App() {
   const [inputText, setInputText] = useState({
@@ -53,6 +54,8 @@ export default function App() {
       <p>
         {inputText.firstName} {inputText.lastName} {inputText.email}
       </p>
+
+      <TextFocus/>
     </>
   );
 }
